@@ -14,7 +14,7 @@ public class Program {
 		Scanner ler = new Scanner(System.in);
 		SellerDao sellerDao =  DaoFactory.createSellerDao();
 	
-		System.out.println("Digite o id que deseja procurar");
+		System.out.println("Digite o id que deseja procurar	");
 		int a = ler.nextInt();
 		
 		Seller seller = sellerDao.findById(a);
