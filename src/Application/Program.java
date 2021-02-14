@@ -25,7 +25,7 @@ public class Program {
 		System.out.println(seller);
 		System.out.println("");
 		
-		/*System.out.println("== Teste 2: Seller FindByDepartment ====");
+		System.out.println("== Teste 2: Seller FindByDepartment ====");
 		Department department = new Department(2, null);
 			List<Seller> list = sellerDao.findByDepartment(department);
 		
@@ -41,7 +41,7 @@ public class Program {
 					System.out.println(obj);
 			}
 				
-				/*System.out.println("== Teste 4: Inserte ====");
+				System.out.println("== Teste 4: Inserte ====");
 				Seller newSeller = new Seller(null, "Joao", "Joao@gmail.com", new Date(), 8000.0, new Department(4, null));
 				try {
 					sellerDao.insert(newSeller);
@@ -49,7 +49,7 @@ public class Program {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				System.out.println("Inserted! New id = " + newSeller.getId());*/
+				System.out.println("Inserted! New id = " + newSeller.getId());
 				
 				System.out.println("== Teste 5: Update ====");
 				seller = sellerDao.findById(1);
