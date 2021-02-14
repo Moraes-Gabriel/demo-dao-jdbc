@@ -1,5 +1,7 @@
 package Application;
 
+import java.text.ParseException;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -38,6 +40,15 @@ public class Program {
 					System.out.println(obj);
 			}
 				
+				System.out.println("== Teste 4: Inserte ====");
+				Seller newSeller = new Seller(null, "Joao", "Joao@gmail.com", new Date(), 8000.0, new Department(4, null));
+				try {
+					sellerDao.insert(newSeller);
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println("Inserted! New id = " + newSeller.getId());
 	}
 
 }
