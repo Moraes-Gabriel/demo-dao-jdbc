@@ -49,6 +49,13 @@ public class Program {
 					e.printStackTrace();
 				}
 				System.out.println("Inserted! New id = " + newSeller.getId());
+				
+				System.out.println("== Teste 5: Update ====");
+				seller = sellerDao.findById(1);
+				seller.setName("Martha wayne");
+				sellerDao.update(seller);
+				
+				System.out.println("Update complete");
 	}
 
 }
